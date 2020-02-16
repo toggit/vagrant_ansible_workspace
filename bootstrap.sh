@@ -14,6 +14,7 @@ sudo yum repolist
 sudo yum --disablerepo="*" --enablerepo="epel" list available
 
 sudo yum install -y ansible
+sudo yum install -y tree
 
 # sudo systemctl start nginx
 
