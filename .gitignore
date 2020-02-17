@@ -140,3 +140,6 @@ test/vagrant-spec/.vagrant/
 
 #ignore cheatsheets
 cheatsheets/
+
+#ignore secrets file
+*.secret

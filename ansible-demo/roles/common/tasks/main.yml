@@ -1,0 +1,17 @@
+---
+# tasks file for common
+# TODO: add Chrony ntp
+- name: install Chrony - network time service
+  yum:
+    name: chrony
+    state: present
+
+- name: ensure that services are running
+  service:
+    name: “{{ item }}”
+    state: started
+    enabled: yes
+  with_items:
+    - chrony
+# TODO: add new user with group wheel permision
+# TODO: add public key to authorized host for this user
